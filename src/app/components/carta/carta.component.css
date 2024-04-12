@@ -6,6 +6,7 @@
 .example-card {
   max-width: 220px;
   max-height: fit-content;
+  margin: 10px;
 }
 
 .example-header-image {
