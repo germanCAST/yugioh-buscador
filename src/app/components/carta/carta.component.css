@@ -1,0 +1,14 @@
+.cardAlbum {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-card {
+  max-width: 220px;
+  max-height: fit-content;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}

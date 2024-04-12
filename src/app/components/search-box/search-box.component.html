@@ -1,0 +1,12 @@
+<form (keyup.enter)="getData(busqueda)" class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Busca tu carta</mat-label>
+    <input
+      matInput
+      [(ngModel)]="busqueda"
+      name="busqueda"
+      placeholder="Busca tu carta favorita"
+      value=""
+    />
+  </mat-form-field>
+</form>
