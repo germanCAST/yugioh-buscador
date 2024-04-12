@@ -10,7 +10,9 @@
         [alt]="resp.data[0].name"
       />
       <mat-card-header>
-        <mat-card-title>{{ resp.data[0].name | uppercase }}</mat-card-title>
+        <mat-card-title style="color: white">{{
+          resp.data[0].name | uppercase
+        }}</mat-card-title>
         <mat-card-subtitle>{{ resp.data[0].type }}</mat-card-subtitle>
       </mat-card-header>
     </mat-card>

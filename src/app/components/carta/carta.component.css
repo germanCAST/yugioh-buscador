@@ -9,6 +9,15 @@
   margin: 10px;
 }
 
+@media (max-width: 1250px) {
+  .example-card {
+    max-width: 120px;
+    max-height: fit-content;
+    margin: 10px;
+    font-size: small;
+  }
+}
+
 .example-header-image {
   background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
   background-size: cover;
