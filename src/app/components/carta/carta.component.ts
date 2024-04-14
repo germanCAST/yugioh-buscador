@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { CommonModule } from '@angular/common';
 import { CartaService } from '../../services/carta.service';
-import { Carta } from '../../interface/carta';
+import { Carta, Datum } from '../../interface/carta';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -24,7 +24,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 })
 export class CartaComponent implements OnChanges {
   @Input() busqueda: string = '';
-  respuesta: Carta[] = [];
+  respuesta: Datum[] = [];
   historial: Carta[] = [];
 
   // almacenamos la data que viene de SearchBox
@@ -42,7 +42,10 @@ export class CartaComponent implements OnChanges {
     this.cartaService.searchSet = Monster;
     this.cartaService.fetchData().subscribe((response) => {
       this.cartaService.responseData = response;
-      this.respuesta.push(response);
+      response.data.forEach((element) => {
+        //ver any
+        this.respuesta.push(element);
+      });
     });
   }
 }

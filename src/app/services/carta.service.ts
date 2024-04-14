@@ -14,7 +14,7 @@ export class CartaService {
 
   fetchData(): Observable<Carta> {
     return this.http.get<Carta>(
-      `https://db.ygoprodeck.com/api/v7/cardinfo.php?&fname=${this.searchSet}&num=1&offset=0`
+      `https://db.ygoprodeck.com/api/v7/cardinfo.php?&fname=${this.searchSet}&num=10&offset=0`
     );
   }
 }

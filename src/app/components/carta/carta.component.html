@@ -1,4 +1,4 @@
-<ng-container *ngIf="respuesta">
+<ng-container>
   <div class="cardAlbum">
     <mat-card
       class="example-card"
@@ -6,14 +6,14 @@
     >
       <img
         mat-card-image
-        [src]="resp.data[0].card_images[0].image_url_small"
-        [alt]="resp.data[0].name"
+        [src]="resp.card_images[0].image_url_small"
+        [alt]="resp.name"
       />
       <mat-card-header>
         <mat-card-title style="color: white">
-          <h3 class="little">{{ resp.data[0].name | uppercase }}</h3>
+          <h3 class="little">{{ resp.name | uppercase }}</h3>
         </mat-card-title>
-        <mat-card-subtitle>{{ resp.data[0].type }}</mat-card-subtitle>
+        <mat-card-subtitle>{{ resp.type }}</mat-card-subtitle>
       </mat-card-header>
     </mat-card>
   </div>
