@@ -10,5 +10,5 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Bienvenido/a a mi Yugi API';
+  title = 'Buscador de tarjetas';
 }
