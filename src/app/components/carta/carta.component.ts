@@ -32,6 +32,7 @@ export class CartaComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['busqueda'].currentValue) {
+      this.respuesta = [];
       this.getData(this.busqueda);
       // this.historial.push(this.respuesta);
       this.busqueda = '';

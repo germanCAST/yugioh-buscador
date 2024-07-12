@@ -1,7 +1,6 @@
 .cardAlbum {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .example-card {
